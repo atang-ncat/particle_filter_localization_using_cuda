@@ -3,8 +3,109 @@
 #include <vector>
 #include <iostream>
 #include <random>
+#include <chrono>
+#include <fstream>
+#include <thrust/host_vector.h>
+#include <thrust/device_vector.h>
+#include <thrust/execution_policy.h> 
+#include <thrust/system/cuda/execution_policy.h>
 
-int main() {
+// Simple timing function for benchmarking
+template<typename Func>
+double measure_time_ms(Func&& func) {
+    auto start = std::chrono::high_resolution_clock::now();
+    func();
+    auto end = std::chrono::high_resolution_clock::now();
+    return std::chrono::duration<double, std::milli>(end - start).count();
+}
+
+// Function to run benchmarks
+void run_benchmarks() {
+    // Parameters
+    const int num_landmarks = 5;
+    const int num_iterations = 100;
+    const float dt = 0.1f;
+    
+    // Create landmarks
+    std::vector<float> landmarks_x = {5.0f, 10.0f, 15.0f, 20.0f, 25.0f};
+    std::vector<float> landmarks_y = {5.0f, 15.0f, 25.0f, 10.0f, 20.0f};
+    
+    // Create measurements
+    std::vector<Measurement> measurements;
+    for (int i = 0; i < num_landmarks; i++) {
+        measurements.push_back(Measurement{
+            static_cast<float>(i),       // landmark_id
+            5.0f + i,                    // range (simulated)
+            static_cast<int>(0.1f * i)   // bearing (cast to int)
+        });
+    }
+    
+    // Test with different particle counts
+    std::vector<int> particle_counts = {100, 1000, 10000, 100000};
+    
+    // Create and open a text file for writing results
+    std::ofstream results_file("particle_filter_results.txt");
+    
+    // Write header to file
+    results_file << "===== GPU Particle Filter Performance =====" << std::endl;
+    results_file << "Particle Count, Prediction (ms), Weight Update (ms), Resampling (ms), Total (ms)" << std::endl;
+    
+    // Also output to console
+    std::cout << "===== GPU Particle Filter Performance =====" << std::endl;
+    std::cout << "\nParticle Count, Prediction (ms), Weight Update (ms), Resampling (ms), Total (ms)\n";
+    
+    for (int count : particle_counts) {
+        // Initialize particle filter with this count
+        ParticleFilter pf_gpu(count);
+        
+        // Time prediction step
+        double predict_time_gpu = measure_time_ms([&]() {
+            for (int i = 0; i < num_iterations; i++) {
+                pf_gpu.predict(dt, 1.0f, 0.1f);
+            }
+        }) / num_iterations;
+        
+        // Time weight update step
+        double update_weights_time_gpu = measure_time_ms([&]() {
+            for (int i = 0; i < num_iterations; i++) {
+                pf_gpu.updateWeights(measurements, landmarks_x, landmarks_y);
+            }
+        }) / num_iterations;
+        
+        // Time resampling step
+        double resample_time_gpu = measure_time_ms([&]() {
+            for (int i = 0; i < num_iterations; i++) {
+                pf_gpu.resample();
+            }
+        }) / num_iterations;
+        
+        // Calculate total time
+        double total_time = predict_time_gpu + update_weights_time_gpu + resample_time_gpu;
+        
+        // Format the result string
+        std::stringstream result;
+        result << count << ", " 
+               << predict_time_gpu << ", " 
+               << update_weights_time_gpu << ", " 
+               << resample_time_gpu << ", "
+               << total_time;
+        
+        // Output results to console
+        std::cout << result.str() << std::endl;
+        
+        // Save to file
+        results_file << result.str() << std::endl;
+    }
+    
+    // Close the file
+    results_file.close();
+    
+    std::cout << "\nBenchmark results saved to particle_filter_results.txt" << std::endl;
+}
+
+
+// Function to run the visualization simulation
+void run_visualization() {
     // Initialize particle filter with only num_particles parameter
     int num_particles = 300;
     ParticleFilter pf(num_particles);
@@ -90,9 +191,9 @@ int main() {
             while (bearing < -M_PI) bearing += 2.0f * M_PI;
 
             measurements.push_back(Measurement{
-                static_cast<float>(i),  // id
-                range,                // range
-                static_cast<int>(bearing)               // bearing
+                static_cast<float>(i),    // id
+                range,                    // range
+                static_cast<int>(bearing) // bearing needs to be int
             });
         }
 
@@ -137,5 +238,26 @@ int main() {
     }
 
     cv::destroyAllWindows();
+}
+
+int main(int argc, char** argv) {
+    // Check command line arguments to determine mode
+    bool run_benchmark = false;
+    
+    for (int i = 1; i < argc; i++) {
+        std::string arg = argv[i];
+        if (arg == "--benchmark" || arg == "-b") {
+            run_benchmark = true;
+        }
+    }
+    
+    if (run_benchmark) {
+        std::cout << "Running benchmarks..." << std::endl;
+        run_benchmarks();
+    } else {
+        std::cout << "Running visualization..." << std::endl;
+        run_visualization();
+    }
+    
     return 0;
 }

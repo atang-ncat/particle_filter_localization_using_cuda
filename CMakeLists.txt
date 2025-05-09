@@ -48,6 +48,7 @@ target_link_libraries(particle_filter_localization
         PRIVATE ${OpenCV_LIBS}
 )
 
+
 # Enable separable compilation for CUDA device calls
 set_target_properties(particle_filter_localization PROPERTIES
         CUDA_SEPARABLE_COMPILATION ON

@@ -1572,6 +1572,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/backward/auto_ptr.h \
@@ -1698,6 +1699,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/ratio \
@@ -2689,6 +2691,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/detail/execute_with_allocator_fwd.h \
   /usr/local/cuda/include/thrust/detail/execute_with_dependencies.h \
   /usr/local/cuda/include/thrust/detail/execution_policy.h \
+  /usr/local/cuda/include/thrust/detail/extrema.inl \
   /usr/local/cuda/include/thrust/detail/fill.inl \
   /usr/local/cuda/include/thrust/detail/find.inl \
   /usr/local/cuda/include/thrust/detail/for_each.inl \
@@ -2709,11 +2712,13 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/detail/functional/placeholder.h \
   /usr/local/cuda/include/thrust/detail/functional/value.h \
   /usr/local/cuda/include/thrust/detail/generate.inl \
+  /usr/local/cuda/include/thrust/detail/get_iterator_value.h \
   /usr/local/cuda/include/thrust/detail/integer_math.h \
   /usr/local/cuda/include/thrust/detail/integer_traits.h \
   /usr/local/cuda/include/thrust/detail/internal_functional.h \
   /usr/local/cuda/include/thrust/detail/malloc_and_free.h \
   /usr/local/cuda/include/thrust/detail/memory_wrapper.h \
+  /usr/local/cuda/include/thrust/detail/merge.inl \
   /usr/local/cuda/include/thrust/detail/minmax.h \
   /usr/local/cuda/include/thrust/detail/mismatch.inl \
   /usr/local/cuda/include/thrust/detail/mpl/math.h \
@@ -2728,6 +2733,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/detail/reference.h \
   /usr/local/cuda/include/thrust/detail/reference_forward_declaration.h \
   /usr/local/cuda/include/thrust/detail/replace.inl \
+  /usr/local/cuda/include/thrust/detail/reverse.inl \
   /usr/local/cuda/include/thrust/detail/scan.inl \
   /usr/local/cuda/include/thrust/detail/scatter.inl \
   /usr/local/cuda/include/thrust/detail/seq.h \
@@ -2739,6 +2745,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/detail/temporary_array.inl \
   /usr/local/cuda/include/thrust/detail/temporary_buffer.h \
   /usr/local/cuda/include/thrust/detail/transform.inl \
+  /usr/local/cuda/include/thrust/detail/transform_reduce.inl \
   /usr/local/cuda/include/thrust/detail/tuple_meta_transform.h \
   /usr/local/cuda/include/thrust/detail/tuple_transform.h \
   /usr/local/cuda/include/thrust/detail/type_deduction.h \
@@ -2763,11 +2770,14 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/device_vector.h \
   /usr/local/cuda/include/thrust/distance.h \
   /usr/local/cuda/include/thrust/equal.h \
+  /usr/local/cuda/include/thrust/execution_policy.h \
+  /usr/local/cuda/include/thrust/extrema.h \
   /usr/local/cuda/include/thrust/fill.h \
   /usr/local/cuda/include/thrust/find.h \
   /usr/local/cuda/include/thrust/for_each.h \
   /usr/local/cuda/include/thrust/functional.h \
   /usr/local/cuda/include/thrust/generate.h \
+  /usr/local/cuda/include/thrust/host_vector.h \
   /usr/local/cuda/include/thrust/iterator/counting_iterator.h \
   /usr/local/cuda/include/thrust/iterator/detail/any_assign.h \
   /usr/local/cuda/include/thrust/iterator/detail/any_system_tag.h \
@@ -2804,6 +2814,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/iterator/transform_iterator.h \
   /usr/local/cuda/include/thrust/iterator/zip_iterator.h \
   /usr/local/cuda/include/thrust/memory.h \
+  /usr/local/cuda/include/thrust/merge.h \
   /usr/local/cuda/include/thrust/mismatch.h \
   /usr/local/cuda/include/thrust/mr/allocator.h \
   /usr/local/cuda/include/thrust/mr/device_memory_resource.h \
@@ -2816,25 +2827,38 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/pair.h \
   /usr/local/cuda/include/thrust/reduce.h \
   /usr/local/cuda/include/thrust/replace.h \
+  /usr/local/cuda/include/thrust/reverse.h \
   /usr/local/cuda/include/thrust/scan.h \
   /usr/local/cuda/include/thrust/scatter.h \
   /usr/local/cuda/include/thrust/swap.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/adjacent_difference.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/assign_value.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/binary_search.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/copy.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/copy_if.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/execution_policy.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/extrema.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/find.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/for_each.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/generate.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/get_value.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/iter_swap.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/merge.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/par.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/partition.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/reduce.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/reduce_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/remove.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/scan.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/scan_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/set_operations.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/sort.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/transform.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/unique.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/unique_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/execution_policy.h \
   /usr/local/cuda/include/thrust/system/cpp/memory_resource.h \
   /usr/local/cuda/include/thrust/system/cpp/pointer.h \
   /usr/local/cuda/include/thrust/system/cuda/config.h \
@@ -2851,6 +2875,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/cuda/detail/equal.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/error.inl \
   /usr/local/cuda/include/thrust/system/cuda/detail/execution_policy.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/extrema.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/fill.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/find.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/for_each.h \
@@ -2863,6 +2888,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/cuda/detail/iter_swap.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/make_unsigned_special.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/merge.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/mismatch.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/par.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/par_to_seq.h \
@@ -2870,6 +2896,7 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/cuda/detail/reduce.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/reduce_by_key.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/replace.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/reverse.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scan.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scatter.h \
@@ -2877,16 +2904,19 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/cuda/detail/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/terminate.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/transform.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/transform_reduce.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/uninitialized_copy.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/uninitialized_fill.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/util.h \
   /usr/local/cuda/include/thrust/system/cuda/error.h \
+  /usr/local/cuda/include/thrust/system/cuda/execution_policy.h \
   /usr/local/cuda/include/thrust/system/cuda/memory_resource.h \
   /usr/local/cuda/include/thrust/system/cuda/pointer.h \
   /usr/local/cuda/include/thrust/system/detail/adl/assign_value.h \
   /usr/local/cuda/include/thrust/system/detail/adl/copy.h \
   /usr/local/cuda/include/thrust/system/detail/adl/copy_if.h \
   /usr/local/cuda/include/thrust/system/detail/adl/equal.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/extrema.h \
   /usr/local/cuda/include/thrust/system/detail/adl/fill.h \
   /usr/local/cuda/include/thrust/system/detail/adl/find.h \
   /usr/local/cuda/include/thrust/system/detail/adl/for_each.h \
@@ -2894,16 +2924,19 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/detail/adl/get_value.h \
   /usr/local/cuda/include/thrust/system/detail/adl/iter_swap.h \
   /usr/local/cuda/include/thrust/system/detail/adl/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/merge.h \
   /usr/local/cuda/include/thrust/system/detail/adl/mismatch.h \
   /usr/local/cuda/include/thrust/system/detail/adl/reduce.h \
   /usr/local/cuda/include/thrust/system/detail/adl/reduce_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/adl/replace.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/reverse.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scan.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scatter.h \
   /usr/local/cuda/include/thrust/system/detail/adl/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/detail/adl/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/detail/adl/transform.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/transform_reduce.h \
   /usr/local/cuda/include/thrust/system/detail/adl/uninitialized_fill.h \
   /usr/local/cuda/include/thrust/system/detail/bad_alloc.h \
   /usr/local/cuda/include/thrust/system/detail/errno.h \
@@ -2920,6 +2953,8 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/detail/generic/distance.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/equal.h \
   /usr/local/cuda/include/thrust/system/detail/generic/equal.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/extrema.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/extrema.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/fill.h \
   /usr/local/cuda/include/thrust/system/detail/generic/find.h \
   /usr/local/cuda/include/thrust/system/detail/generic/find.inl \
@@ -2928,6 +2963,8 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/detail/generic/generate.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/memory.h \
   /usr/local/cuda/include/thrust/system/detail/generic/memory.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/merge.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/merge.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/mismatch.h \
   /usr/local/cuda/include/thrust/system/detail/generic/mismatch.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/reduce.h \
@@ -2936,6 +2973,8 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/detail/generic/reduce_by_key.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/replace.h \
   /usr/local/cuda/include/thrust/system/detail/generic/replace.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/reverse.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/reverse.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/scan.h \
   /usr/local/cuda/include/thrust/system/detail/generic/scan.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/scan_by_key.h \
@@ -2952,39 +2991,64 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
   /usr/local/cuda/include/thrust/system/detail/generic/temporary_buffer.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/transform.h \
   /usr/local/cuda/include/thrust/system/detail/generic/transform.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/transform_reduce.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/transform_reduce.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/uninitialized_fill.h \
   /usr/local/cuda/include/thrust/system/detail/generic/uninitialized_fill.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/adjacent_difference.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/assign_value.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/binary_search.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/copy.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/copy_backward.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/copy_if.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/equal.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/execution_policy.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/extrema.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/fill.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/find.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/for_each.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/general_copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/generate.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/get_value.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/insertion_sort.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/iter_swap.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/merge.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/merge.inl \
   /usr/local/cuda/include/thrust/system/detail/sequential/mismatch.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/partition.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/reduce.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/reduce_by_key.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/remove.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/replace.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/reverse.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scan.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scatter.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/set_operations.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_merge_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_merge_sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_primitive_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_primitive_sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_radix_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_radix_sort.inl \
   /usr/local/cuda/include/thrust/system/detail/sequential/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/transform.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/transform_reduce.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/trivial_copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/uninitialized_fill.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/unique.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/unique_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/system_error.inl \
   /usr/local/cuda/include/thrust/system/error_code.h \
   /usr/local/cuda/include/thrust/system/system_error.h \
   /usr/local/cuda/include/thrust/system_error.h \
   /usr/local/cuda/include/thrust/transform.h \
+  /usr/local/cuda/include/thrust/transform_reduce.h \
   /usr/local/cuda/include/thrust/tuple.h \
   /usr/local/cuda/include/thrust/type_traits/integer_sequence.h \
   /usr/local/cuda/include/thrust/type_traits/is_contiguous_iterator.h \
@@ -3034,6 +3098,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
@@ -3139,6 +3204,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/fstream \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/iomanip \
@@ -3392,8 +3458,10 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
@@ -3992,6 +4060,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/surface_types.h \
   /usr/local/cuda/include/texture_types.h \
   /usr/local/cuda/include/thrust/advance.h \
+  /usr/local/cuda/include/thrust/copy.h \
   /usr/local/cuda/include/thrust/detail/advance.inl \
   /usr/local/cuda/include/thrust/detail/alignment.h \
   /usr/local/cuda/include/thrust/detail/allocator/allocator_traits.h \
@@ -4030,6 +4099,8 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/detail/contiguous_storage.inl \
   /usr/local/cuda/include/thrust/detail/copy.h \
   /usr/local/cuda/include/thrust/detail/copy.inl \
+  /usr/local/cuda/include/thrust/detail/copy_if.h \
+  /usr/local/cuda/include/thrust/detail/copy_if.inl \
   /usr/local/cuda/include/thrust/detail/cpp11_required.h \
   /usr/local/cuda/include/thrust/detail/cstdint.h \
   /usr/local/cuda/include/thrust/detail/dependencies_aware_execution_policy.h \
@@ -4065,6 +4136,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/detail/internal_functional.h \
   /usr/local/cuda/include/thrust/detail/malloc_and_free.h \
   /usr/local/cuda/include/thrust/detail/memory_wrapper.h \
+  /usr/local/cuda/include/thrust/detail/merge.inl \
   /usr/local/cuda/include/thrust/detail/minmax.h \
   /usr/local/cuda/include/thrust/detail/mismatch.inl \
   /usr/local/cuda/include/thrust/detail/numeric_traits.h \
@@ -4078,11 +4150,14 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/detail/reference.h \
   /usr/local/cuda/include/thrust/detail/reference_forward_declaration.h \
   /usr/local/cuda/include/thrust/detail/replace.inl \
+  /usr/local/cuda/include/thrust/detail/reverse.inl \
   /usr/local/cuda/include/thrust/detail/scan.inl \
   /usr/local/cuda/include/thrust/detail/scatter.inl \
   /usr/local/cuda/include/thrust/detail/seq.h \
   /usr/local/cuda/include/thrust/detail/static_assert.h \
   /usr/local/cuda/include/thrust/detail/swap.h \
+  /usr/local/cuda/include/thrust/detail/swap.inl \
+  /usr/local/cuda/include/thrust/detail/swap_ranges.inl \
   /usr/local/cuda/include/thrust/detail/temporary_array.h \
   /usr/local/cuda/include/thrust/detail/temporary_array.inl \
   /usr/local/cuda/include/thrust/detail/temporary_buffer.h \
@@ -4111,6 +4186,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/device_vector.h \
   /usr/local/cuda/include/thrust/distance.h \
   /usr/local/cuda/include/thrust/equal.h \
+  /usr/local/cuda/include/thrust/execution_policy.h \
   /usr/local/cuda/include/thrust/fill.h \
   /usr/local/cuda/include/thrust/find.h \
   /usr/local/cuda/include/thrust/for_each.h \
@@ -4153,6 +4229,7 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/iterator/transform_iterator.h \
   /usr/local/cuda/include/thrust/iterator/zip_iterator.h \
   /usr/local/cuda/include/thrust/memory.h \
+  /usr/local/cuda/include/thrust/merge.h \
   /usr/local/cuda/include/thrust/mismatch.h \
   /usr/local/cuda/include/thrust/mr/allocator.h \
   /usr/local/cuda/include/thrust/mr/device_memory_resource.h \
@@ -4165,28 +4242,45 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/pair.h \
   /usr/local/cuda/include/thrust/reduce.h \
   /usr/local/cuda/include/thrust/replace.h \
+  /usr/local/cuda/include/thrust/reverse.h \
   /usr/local/cuda/include/thrust/scan.h \
   /usr/local/cuda/include/thrust/scatter.h \
+  /usr/local/cuda/include/thrust/swap.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/adjacent_difference.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/assign_value.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/binary_search.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/copy.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/copy_if.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/execution_policy.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/extrema.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/find.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/for_each.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/generate.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/get_value.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/iter_swap.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/merge.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/par.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/partition.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/reduce.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/reduce_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/remove.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/scan.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/scan_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/set_operations.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/sort.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/cpp/detail/transform.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/unique.h \
+  /usr/local/cuda/include/thrust/system/cpp/detail/unique_by_key.h \
+  /usr/local/cuda/include/thrust/system/cpp/execution_policy.h \
   /usr/local/cuda/include/thrust/system/cpp/memory_resource.h \
   /usr/local/cuda/include/thrust/system/cpp/pointer.h \
   /usr/local/cuda/include/thrust/system/cuda/config.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/assign_value.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/cdp_dispatch.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/copy.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/copy_if.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/cross_system.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/equal.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/error.inl \
@@ -4202,25 +4296,30 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/cuda/detail/internal/copy_device_to_device.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/iter_swap.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/merge.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/mismatch.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/par.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/par_to_seq.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/reduce.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/reduce_by_key.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/replace.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/reverse.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scan.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/scatter.h \
+  /usr/local/cuda/include/thrust/system/cuda/detail/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/transform.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/uninitialized_copy.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/uninitialized_fill.h \
   /usr/local/cuda/include/thrust/system/cuda/detail/util.h \
   /usr/local/cuda/include/thrust/system/cuda/error.h \
+  /usr/local/cuda/include/thrust/system/cuda/execution_policy.h \
   /usr/local/cuda/include/thrust/system/cuda/memory_resource.h \
   /usr/local/cuda/include/thrust/system/cuda/pointer.h \
   /usr/local/cuda/include/thrust/system/detail/adl/assign_value.h \
   /usr/local/cuda/include/thrust/system/detail/adl/copy.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/copy_if.h \
   /usr/local/cuda/include/thrust/system/detail/adl/equal.h \
   /usr/local/cuda/include/thrust/system/detail/adl/fill.h \
   /usr/local/cuda/include/thrust/system/detail/adl/find.h \
@@ -4229,13 +4328,16 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/adl/get_value.h \
   /usr/local/cuda/include/thrust/system/detail/adl/iter_swap.h \
   /usr/local/cuda/include/thrust/system/detail/adl/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/merge.h \
   /usr/local/cuda/include/thrust/system/detail/adl/mismatch.h \
   /usr/local/cuda/include/thrust/system/detail/adl/reduce.h \
   /usr/local/cuda/include/thrust/system/detail/adl/reduce_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/adl/replace.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/reverse.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scan.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/adl/scatter.h \
+  /usr/local/cuda/include/thrust/system/detail/adl/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/detail/adl/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/detail/adl/transform.h \
   /usr/local/cuda/include/thrust/system/detail/adl/uninitialized_fill.h \
@@ -4248,6 +4350,8 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/generic/advance.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/copy.h \
   /usr/local/cuda/include/thrust/system/detail/generic/copy.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/copy_if.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/copy_if.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/distance.h \
   /usr/local/cuda/include/thrust/system/detail/generic/distance.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/equal.h \
@@ -4260,6 +4364,8 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/generic/generate.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/memory.h \
   /usr/local/cuda/include/thrust/system/detail/generic/memory.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/merge.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/merge.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/mismatch.h \
   /usr/local/cuda/include/thrust/system/detail/generic/mismatch.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/reduce.h \
@@ -4268,6 +4374,8 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/generic/reduce_by_key.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/replace.h \
   /usr/local/cuda/include/thrust/system/detail/generic/replace.inl \
+  /usr/local/cuda/include/thrust/system/detail/generic/reverse.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/reverse.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/scan.h \
   /usr/local/cuda/include/thrust/system/detail/generic/scan.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/scan_by_key.h \
@@ -4277,6 +4385,8 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/generic/select_system.h \
   /usr/local/cuda/include/thrust/system/detail/generic/select_system.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/select_system_exists.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/swap_ranges.h \
+  /usr/local/cuda/include/thrust/system/detail/generic/swap_ranges.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/tag.h \
   /usr/local/cuda/include/thrust/system/detail/generic/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/detail/generic/temporary_buffer.inl \
@@ -4284,30 +4394,53 @@ CMakeFiles/particle_filter_localization.dir/src/main.cpp.o: /home/atang/Document
   /usr/local/cuda/include/thrust/system/detail/generic/transform.inl \
   /usr/local/cuda/include/thrust/system/detail/generic/uninitialized_fill.h \
   /usr/local/cuda/include/thrust/system/detail/generic/uninitialized_fill.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/adjacent_difference.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/assign_value.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/binary_search.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/copy.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/copy_backward.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/copy_if.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/equal.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/execution_policy.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/extrema.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/fill.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/find.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/for_each.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/general_copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/generate.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/get_value.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/insertion_sort.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/iter_swap.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/malloc_and_free.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/merge.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/merge.inl \
   /usr/local/cuda/include/thrust/system/detail/sequential/mismatch.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/partition.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/reduce.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/reduce_by_key.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/remove.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/replace.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/reverse.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scan.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scan_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/scatter.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/set_operations.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_merge_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_merge_sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_primitive_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_primitive_sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_radix_sort.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/stable_radix_sort.inl \
+  /usr/local/cuda/include/thrust/system/detail/sequential/swap_ranges.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/temporary_buffer.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/transform.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/trivial_copy.h \
   /usr/local/cuda/include/thrust/system/detail/sequential/uninitialized_fill.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/unique.h \
+  /usr/local/cuda/include/thrust/system/detail/sequential/unique_by_key.h \
   /usr/local/cuda/include/thrust/system/detail/system_error.inl \
   /usr/local/cuda/include/thrust/system/error_code.h \
   /usr/local/cuda/include/thrust/system/system_error.h \
@@ -10745,6 +10878,28 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
   /usr/local/cuda/include/vector_types.h
 
 
+/home/atang/Documents/dev/projects/particle_filter_localization/include/particle_filter/motion_model.cuh:
+
+/home/atang/Documents/dev/projects/particle_filter_localization/src/particle_filter/measurement_model.cu:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/c++/11/random:
+
+/usr/include/c++/11/numeric:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/c++/11/bits/random.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
 /usr/local/cuda/include/thrust/transform_reduce.h:
 
 /usr/local/cuda/include/thrust/system/detail/sequential/stable_radix_sort.h:
@@ -10769,6 +10924,8 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 
 /usr/local/cuda/include/thrust/system/detail/generic/extrema.inl:
 
+/usr/local/cuda/include/thrust/system/detail/generic/copy_if.h:
+
 /usr/local/cuda/include/thrust/system/detail/adl/transform_reduce.h:
 
 /usr/local/cuda/include/thrust/system/detail/adl/reverse.h:
@@ -10777,7 +10934,11 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 
 /usr/local/cuda/include/thrust/system/detail/adl/extrema.h:
 
+/usr/local/cuda/include/thrust/system/detail/adl/copy_if.h:
+
 /usr/local/cuda/include/thrust/system/cuda/detail/merge.h:
+
+/usr/local/cuda/include/thrust/system/cuda/detail/copy_if.h:
 
 /usr/local/cuda/include/thrust/system/cpp/detail/sort.h:
 
@@ -10796,30 +10957,6 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 /usr/local/cuda/include/thrust/detail/merge.inl:
 
 /usr/local/cuda/include/thrust/detail/extrema.inl:
-
-/home/atang/Documents/dev/projects/particle_filter_localization/include/particle_filter/motion_model.cuh:
-
-/home/atang/Documents/dev/projects/particle_filter_localization/src/particle_filter/measurement_model.cu:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
-
-/usr/include/c++/11/random:
-
-/usr/include/c++/11/numeric:
-
-/usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/c++/11/bits/random.h:
-
-/usr/local/cuda/include/thrust/system/detail/generic/copy_if.h:
-
-/usr/local/cuda/include/thrust/system/detail/adl/copy_if.h:
-
-/usr/local/cuda/include/thrust/system/cuda/detail/copy_if.h:
 
 /usr/local/cuda/include/thrust/detail/copy_if.h:
 
@@ -11523,6 +11660,8 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 
 /usr/local/cuda/include/cuda/std/detail/libcxx/include/__iterator/ostreambuf_iterator.h:
 
+/usr/include/c++/11/fstream:
+
 /usr/local/cuda/include/cuda/std/detail/libcxx/include/__iterator/ostream_iterator.h:
 
 /usr/local/cuda/include/cuda/std/detail/libcxx/include/__iterator/move_sentinel.h:
@@ -11709,9 +11848,9 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 
 /usr/include/opencv4/opencv2/videoio.hpp:
 
-/usr/local/cuda/include/thrust/extrema.h:
-
 /usr/local/cuda/include/thrust/system/detail/sequential/copy_if.h:
+
+/usr/local/cuda/include/thrust/extrema.h:
 
 /usr/local/cuda-12.4/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/__type_traits/is_trivially_copyable.h:
 
@@ -13382,6 +13521,8 @@ CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o:
 /usr/local/cuda/include/thrust/detail/config/simple_defines.h:
 
 /usr/local/cuda/include/cub/block/block_store.cuh:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/opencv4/opencv2/flann/heap.h:
 
