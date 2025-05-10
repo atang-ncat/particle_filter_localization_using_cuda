@@ -37,11 +37,20 @@ set(DATA_STRUCTURE_SOURCES
         src/data_structures/circular_queue.cu
 )
 
+set(ANALYSIS_SOURCES
+    src/analysis/performance_analysis.cpp
+)
+
+set(ANALYSIS_HEADERS
+    include/analysis/performance_analysis.h
+)
+
 # Main executable
 add_executable(particle_filter_localization
         src/main.cpp
         ${PARTICLE_FILTER_SOURCES}
         ${DATA_STRUCTURE_SOURCES}
+        ${ANALYSIS_SOURCES}
 )
 
 target_link_libraries(particle_filter_localization

@@ -1,4 +1,5 @@
 #include "particle_filter/particle_filter.cuh"
+#include "analysis/performance_analysis.h"
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <iostream>
@@ -254,6 +255,16 @@ int main(int argc, char** argv) {
     if (run_benchmark) {
         std::cout << "Running benchmarks..." << std::endl;
         run_benchmarks();
+
+        PerformanceAnalyzer analyzer;
+        std::vector<BenchmarkResult> results = analyzer.loadResults("particle_filter_results.txt");
+        
+        if (!results.empty()) {
+            analyzer.createScalingAnalysisPlot(results, "scaling_analysis.png");
+            analyzer.createComponentBreakdownPlot(results, "component_breakdown.png");
+
+            std::cout << "Performance analysis complete. Check the output files." << std::endl;
+        }
     } else {
         std::cout << "Running visualization..." << std::endl;
         run_visualization();

@@ -129,6 +129,30 @@ particle_filter_localization/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particle_filter_localization.dir/build.make CMakeFiles/particle_filter_localization.dir/build
 .PHONY : particle_filter_localization/fast
 
+src/analysis/performance_analysis.o: src/analysis/performance_analysis.cpp.o
+.PHONY : src/analysis/performance_analysis.o
+
+# target to build an object file
+src/analysis/performance_analysis.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particle_filter_localization.dir/build.make CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o
+.PHONY : src/analysis/performance_analysis.cpp.o
+
+src/analysis/performance_analysis.i: src/analysis/performance_analysis.cpp.i
+.PHONY : src/analysis/performance_analysis.i
+
+# target to preprocess a source file
+src/analysis/performance_analysis.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particle_filter_localization.dir/build.make CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.i
+.PHONY : src/analysis/performance_analysis.cpp.i
+
+src/analysis/performance_analysis.s: src/analysis/performance_analysis.cpp.s
+.PHONY : src/analysis/performance_analysis.s
+
+# target to generate assembly for a file
+src/analysis/performance_analysis.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/particle_filter_localization.dir/build.make CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.s
+.PHONY : src/analysis/performance_analysis.cpp.s
+
 src/data_structures/circular_queue.o: src/data_structures/circular_queue.cu.o
 .PHONY : src/data_structures/circular_queue.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... particle_filter_localization"
+	@echo "... src/analysis/performance_analysis.o"
+	@echo "... src/analysis/performance_analysis.i"
+	@echo "... src/analysis/performance_analysis.s"
 	@echo "... src/data_structures/circular_queue.o"
 	@echo "... src/data_structures/circular_queue.i"
 	@echo "... src/data_structures/circular_queue.s"

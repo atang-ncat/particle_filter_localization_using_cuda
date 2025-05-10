@@ -173,6 +173,20 @@ CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o: CMakeFiles/particle_filter_localization.dir/flags.make
+CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o: /home/atang/Documents/dev/projects/particle_filter_localization/src/analysis/performance_analysis.cpp
+CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o: CMakeFiles/particle_filter_localization.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atang/Documents/dev/projects/particle_filter_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o"
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o -MF CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o.d -o CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o -c /home/atang/Documents/dev/projects/particle_filter_localization/src/analysis/performance_analysis.cpp
+
+CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.i"
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atang/Documents/dev/projects/particle_filter_localization/src/analysis/performance_analysis.cpp > CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.i
+
+CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.s"
+	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atang/Documents/dev/projects/particle_filter_localization/src/analysis/performance_analysis.cpp -o CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.s
+
 # Object files for target particle_filter_localization
 particle_filter_localization_OBJECTS = \
 "CMakeFiles/particle_filter_localization.dir/src/main.cpp.o" \
@@ -181,7 +195,8 @@ particle_filter_localization_OBJECTS = \
 "CMakeFiles/particle_filter_localization.dir/src/particle_filter/measurement_model.cu.o" \
 "CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o" \
 "CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o" \
-"CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o"
+"CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o" \
+"CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o"
 
 # External object files for target particle_filter_localization
 particle_filter_localization_EXTERNAL_OBJECTS =
@@ -193,6 +208,7 @@ CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/part
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o
+CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/build.make
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
@@ -251,7 +267,7 @@ CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: /usr/lib/x86_64
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/deviceLinkLibs.rsp
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/deviceObjects1.rsp
 CMakeFiles/particle_filter_localization.dir/cmake_device_link.o: CMakeFiles/particle_filter_localization.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atang/Documents/dev/projects/particle_filter_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CUDA device code CMakeFiles/particle_filter_localization.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atang/Documents/dev/projects/particle_filter_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CUDA device code CMakeFiles/particle_filter_localization.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/particle_filter_localization.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -266,7 +282,8 @@ particle_filter_localization_OBJECTS = \
 "CMakeFiles/particle_filter_localization.dir/src/particle_filter/measurement_model.cu.o" \
 "CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o" \
 "CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o" \
-"CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o"
+"CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o" \
+"CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o"
 
 # External object files for target particle_filter_localization
 particle_filter_localization_EXTERNAL_OBJECTS =
@@ -278,6 +295,7 @@ particle_filter_localization: CMakeFiles/particle_filter_localization.dir/src/pa
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/src/particle_filter/resampling.cu.o
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/src/data_structures/linked_list.cu.o
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/src/data_structures/circular_queue.cu.o
+particle_filter_localization: CMakeFiles/particle_filter_localization.dir/src/analysis/performance_analysis.cpp.o
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/build.make
 particle_filter_localization: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 particle_filter_localization: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
@@ -335,7 +353,7 @@ particle_filter_localization: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5
 particle_filter_localization: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/cmake_device_link.o
 particle_filter_localization: CMakeFiles/particle_filter_localization.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atang/Documents/dev/projects/particle_filter_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable particle_filter_localization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atang/Documents/dev/projects/particle_filter_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable particle_filter_localization"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/particle_filter_localization.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
